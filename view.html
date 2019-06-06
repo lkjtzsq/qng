@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>项目预览页</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/headent.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <img class="logo" src="./img/logo_text.png" />
+    <a href="register.html" class="header_btn header_register_btn">注册</a>
+    <a href="login.html" class="header_btn header_login_btn">登录</a>
+  </div>
+  <div class="title_box">
+    <div class="title_bg">
+      项目预览页
+    </div>
+  </div>
+  <div class="container">
+    <div class="hs_title" style="margin-bottom:12px;">这个就是大大的标题</div>
+    <div class="view_desc">市级评审(<span>待评审</span> 得分:<span>80</span>分) 省级评审(<span>未晋级</span> 得分:<span>80</span>分) 全国终审(<span>已晋级</span> 得分:<span>80</span>分)</div>
+  </div>
+  <div class="container view_box">
+    <div class="flash">
+      <!-- 焦点图 begin -->
+      <div class="scroll">
+        <div class="scroll_cont" id="FS_Cont_01">
+          <!-- 抓站_焦点图 begin -->
+          <div class="box">
+            <img src="http://img.cyol.com/img/home/attachement/jpg/site2/20190524/IMG50865250695.jpg"/>
+            <h3>武警陕西总队机动支队走进中国飞行试验研究院开展主题教育</h3>
+          </div>
+          <div class="box">
+            <img src="http://img.cyol.com/img/home/attachement/jpg/site2/20190524/IMG50865240993.jpg"/>
+            <h3>华为助力英国开通首个5G服务</h3>
+          </div>
+          <div class="box">
+            <img src="http://img.cyol.com/img/home/attachement/jpg/site2/20190524/IMG50865233591.jpg"/>
+            <h3>海宇会同——元代瓷器文化展</h3>
+          </div>
+          <div class="box">
+            <img src="http://img.cyol.com/img/home/attachement/jpg/site2/20190524/IMG50865237592.jpg"/>
+            <h3>高精尖科技“闪耀”科技活动周</h3>
+          </div>
+          <div class="box">
+            <img src="http://img.cyol.com/img/home/attachement/jpg/site2/20190524/IMG50867607755.jpg"/>
+            <h3>五四百年青春对话体验馆在中央团校揭幕</h3>
+          </div>
+          <!-- 抓站_焦点图 end -->
+        </div>
+        <a href="javascript:;" title="上一个" class="arr_left" id="FS_arr_left_01" style="display:none;"></a>
+        <a href="javascript:;" title="下一个" class="arr_right" id="FS_arr_right_01" style="display:none;"></a>
+        <div class="scroll_num" id="FS_numList_01"></div>
+      </div>
+      <script language="javascript" type="text/javascript">
+        <!--//--><![CDATA[//><!--
+        var focusScroll_01 = new ScrollPic();
+        focusScroll_01.scrollContId = "FS_Cont_01"; //内容容器ID
+        //focusScroll_01.arrLeftId      = "FS_arr_left_01";//左箭头ID
+        //focusScroll_01.arrRightId     = "FS_arr_right_01"; //右箭头ID
+
+        focusScroll_01.dotListId = "FS_numList_01"; //点列表ID
+        focusScroll_01.dotClassName = ""; //点className
+        focusScroll_01.dotOnClassName = "current"; //当前点className
+        focusScroll_01.listType = ""; //列表类型(number:数字，其它为空)
+        focusScroll_01.listEvent = "onmouseover"; //切换事件
+
+        focusScroll_01.frameWidth = 380; //显示框宽度
+        focusScroll_01.pageWidth = 380; //翻页宽度
+        focusScroll_01.upright = false; //垂直滚动
+        focusScroll_01.speed = 10; //移动速度(单位毫秒，越小越快)
+        focusScroll_01.space = 60; //每次移动像素(单位px，越大越快)
+        focusScroll_01.autoPlay = true; //自动播放
+        focusScroll_01.autoPlayTime = 5; //自动播放间隔时间(秒)
+        focusScroll_01.circularly = true;
+        focusScroll_01.initialize(); //初始化
+        sina.$('FS_arr_left_01').onmousedown = function() {
+          focusScroll_01.pre();
+          return false;
+        }
+        sina.$('FS_arr_right_01').onmousedown = function() {
+          focusScroll_01.next();
+          return false;
+        }
+        //--><!]]>
+      </script>
+      <!-- 焦点图 end -->
+    </div>
+    <div class="view_para">社会组织名称：南阳市至善社工服务中心</div>
+    <div class="view_para">统一社会信用代码：524113003998587612 <span class="space"></span>法人登记证书扫描件：<a href="#" target="_blank">点击查看附件</a></div>
+    <div class="view_para">登记注册的民政部门：市级民政部（河北-石家庄）</div>
+    <div class="view_para" style="width: 550px;">业务主管单位：直接注册，无业务主管单位/业务主管部门是共青团：XXX名称/业务主管部门不是共青团：XXXX名称</div>
+    <div style="height:30px;"></div>
+    <div class="view_para">法定代表人姓名：王瑞丽
+      <span class="space"></span>法定代表人手机号码：15801325563</div>
+    <div class="view_para">社会组织类型：社会服务机构（民非） <span class="space"></span>行业领域：教育</div>
+    <div class="view_para">成立登记日期：2014-05-26</div>
+    <div class="view_para">年检结果：新成立组织，未参加年检/最近一次参加年检：2018年12月1日 合格</div>
+    <div class="view_para">评估等级：5A <span class="space"></span>是否成立团组织：是</div>
+    <div class="view_para">主要负责人或骨干是否担任县级及以上人大代表、政协委员、党代表、团代表、青联委员、挂兼职团干部情况：是（担任县级及以上挂兼职团干部）/否</div>
+  </div>
+  <div class="container">
+    <div style="height:30px;"></div>
+    <div class="view_item">
+      <div class="view_title">账户信息</div>
+      <div class="view_para">账户名称：南阳市至善社工服务中心<span class="space"></span> 开户账号：500063043200010
+        <span class="space"></span> 开户行：中原银行南阳中南支行
+      </div>
+    </div>
+    <div class="view_item">
+      <div class="view_title">工作人员数量</div>
+      <div class="view_para">专职：2<span class="space"></span> 兼职：2
+        <span class="space"></span> 志愿者：30
+      </div>
+    </div>
+    <div class="view_item">
+      <div class="view_title">通讯地址</div>
+      <div class="view_para">河南-南阳市-卧龙区 建设西路文秀花园</div>
+    </div>
+    <div class="view_item">
+      <div class="view_title">近5年获得省级及以上荣誉情况：</div>
+      <div class="view_para">1.2018年河南青年志愿服务项目大赛铜奖</div>
+      <div class="view_para">2.2017年河南青年公益创投大赛铜奖</div>
+      <div class="view_para">3.2015年第四届河南省优秀志愿者</div>
+    </div>
+    <div class="view_item">
+      <div class="view_para">项目负责人姓名：王瑞丽
+        <span class="space"></span>项目负责人手机号码：13838959620<span class="space"></span> 关注领域：教育扶贫
+      </div>
+      <div class="view_para">项目申报书的省市级团委：河南-南阳/国务院扶贫办社会扶贫司/民政部社会组织管理局</div>
+    </div>
+    <div class="view_item">
+      <div class="view_title">项目需求分析</div>
+      <div class="view_para">项目主要解决弱势家庭教育理念落后、早期教育能力不足，其幼年子女因为家庭对儿童支持环境及家庭社会支持不足，产生焦虑、自卑等情绪，情感、思维、语言发展迟缓，社交能力不足，早期发展处于劣势等问题。 弱势家庭在经济收入、家庭环境、教育理念等方面处于弱势地位，无力接受商业早教机构的服务，无法给幼年子女提供更好的教育教养方法。 儿童早期是人一生发展的黄金期，家庭是影响儿童早期发展的关键因素，研究表明，儿童早期是人一生发展的最重要阶段，它决定着大脑、智力发展，也是一个人情感和认知发展的关键期。提升儿童的早期发展水平，会为其终身发展奠定坚实的基础。
+
+      </div>
+    </div>
+    <div class="view_item">
+      <div class="view_title">服务内容：</div>
+      <div class="view_para">项目主要解决弱势家庭教育理念落后、早期教育能力不足，其幼年子女因为家庭对儿童支持环境及家庭社会支持不足，产生焦虑、自卑等情绪，情感、思维、语言发展迟缓，社交能力不足，早期发展处于劣势等问题。 弱势家庭在经济收入、家庭环境、教育理念等方面处于弱势地位，无力接受商业早教机构的服务，无法给幼年子女提供更好的教育教养方法。 儿童早期是人一生发展的黄金期，家庭是影响儿童早期发展的关键因素，研究表明，儿童早期是人一生发展的最重要阶段，它决定着大脑、智力发展，也是一个人情感和认知发展的关键期。提升儿童的早期发展水平，会为其终身发展奠定坚实的基础。
+
+      </div>
+    </div>
+    <div class="view_item">
+      <div class="view_title">项目创新点：</div>
+      <div class="view_para">项目主要解决弱势家庭教育理念落后、早期教育能力不足，其幼年子女因为家庭对儿童支持环境及家庭社会支持不足，产生焦虑、自卑等情绪，情感、思维、语言发展迟缓，社交能力不足，早期发展处于劣势等问题。 弱势家庭在经济收入、家庭环境、教育理念等方面处于弱势地位，无力接受商业早教机构的服务，无法给幼年子女提供更好的教育教养方法。 儿童早期是人一生发展的黄金期，家庭是影响儿童早期发展的关键因素，研究表明，儿童早期是人一生发展的最重要阶段，它决定着大脑、智力发展，也是一个人情感和认知发展的关键期。提升儿童的早期发展水平，会为其终身发展奠定坚实的基础。
+
+      </div>
+    </div>
+    <div class="view_item">
+      <div class="view_title">可行性分析：</div>
+      <div class="view_para">项目主要解决弱势家庭教育理念落后、早期教育能力不足，其幼年子女因为家庭对儿童支持环境及家庭社会支持不足，产生焦虑、自卑等情绪，情感、思维、语言发展迟缓，社交能力不足，早期发展处于劣势等问题。 弱势家庭在经济收入、家庭环境、教育理念等方面处于弱势地位，无力接受商业早教机构的服务，无法给幼年子女提供更好的教育教养方法。 儿童早期是人一生发展的黄金期，家庭是影响儿童早期发展的关键因素，研究表明，儿童早期是人一生发展的最重要阶段，它决定着大脑、智力发展，也是一个人情感和认知发展的关键期。提升儿童的早期发展水平，会为其终身发展奠定坚实的基础。
+
+      </div>
+    </div>
+    <div class="view_item">
+      <div class="view_title">风险分析及应对预案：</div>
+      <div class="view_para">项目主要解决弱势家庭教育理念落后、早期教育能力不足，其幼年子女因为家庭对儿童支持环境及家庭社会支持不足，产生焦虑、自卑等情绪，情感、思维、语言发展迟缓，社交能力不足，早期发展处于劣势等问题。 弱势家庭在经济收入、家庭环境、教育理念等方面处于弱势地位，无力接受商业早教机构的服务，无法给幼年子女提供更好的教育教养方法。 儿童早期是人一生发展的黄金期，家庭是影响儿童早期发展的关键因素，研究表明，儿童早期是人一生发展的最重要阶段，它决定着大脑、智力发展，也是一个人情感和认知发展的关键期。提升儿童的早期发展水平，会为其终身发展奠定坚实的基础。
+
+      </div>
+    </div>
+    <div class="view_item">
+      <div class="view_title">项目的可持续性：</div>
+      <div class="view_para">项目主要解决弱势家庭教育理念落后、早期教育能力不足，其幼年子女因为家庭对儿童支持环境及家庭社会支持不足，产生焦虑、自卑等情绪，情感、思维、语言发展迟缓，社交能力不足，早期发展处于劣势等问题。 弱势家庭在经济收入、家庭环境、教育理念等方面处于弱势地位，无力接受商业早教机构的服务，无法给幼年子女提供更好的教育教养方法。 儿童早期是人一生发展的黄金期，家庭是影响儿童早期发展的关键因素，研究表明，儿童早期是人一生发展的最重要阶段，它决定着大脑、智力发展，也是一个人情感和认知发展的关键期。提升儿童的早期发展水平，会为其终身发展奠定坚实的基础。
+
+      </div>
+    </div>
+    <div class="view_item">
+      <div class="view_title">预期目标：</div>
+      <table width="1000" cellspacing="0" class="view_table">
+        <tr>
+          <td width="240">服务的乡村数量</td>
+          <td>150000</td>
+        </tr>
+        <tr style="line-height:40px;">
+          <td>项目直接受益人数</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>项目间接受益人数</td>
+          <td>342123</td>
+        </tr>
+        <tr>
+          <td>项目效果</td>
+          <td style="text-align:left;padding: 20px 0;">开展培训10场，开展课程20节。开展培训10场，开展课程20节。开展培训10场，开展课程20节。开展培训10场，开展课程20节。开展培训10场，开展课程20节。开展培训10场，开展课程20节。开展培训10场，开展课程20节。开展培训10场，开展课程20节。开展培训10场，开展课程20节。开展培训10场，开展课程20节。开展培训10场，开展课程20节。开展培训10场，开展课程20节。</td>
+        </tr>
+      </table>
+    </div>
+    <div class="view_item">
+      <div class="view_title">项目已有资金支持：</div>
+      <table width="1000" cellspacing="0" class="view_table" style="line-height:40px;">
+        <tr>
+          <td width="240">政府资金</td>
+          <td>150000</td>
+          <td>北京市朝阳区社区委员会办公室</td>
+        </tr>
+        <tr>
+          <td width="240">企业资金</td>
+          <td>150000</td>
+          <td>无</td>
+        </tr>
+        <tr>
+          <td width="240">社会资金</td>
+          <td>150000</td>
+          <td>无</td>
+        </tr>
+
+      </table>
+    </div>
+    <div class="view_item">
+      <div class="view_title">“伙伴计划”资助经费预算：</div>
+      <table width="1000" cellspacing="0" class="view_table" style="line-height:40px;">
+        <tr>
+          <td width="240">场地租赁费</td>
+          <td>150000</td>
+          <td>12场</td>
+          <td>12000元</td>
+        </tr>
+        <tr>
+          <td width="240">培训讲课费</td>
+          <td>150000</td>
+          <td>12场</td>
+          <td>12000元</td>
+        </tr>
+        <tr>
+          <td width="240">印刷费</td>
+          <td>150000</td>
+          <td>12场</td>
+          <td>12000元</td>
+        </tr>
+        <tr>
+          <td width="240">志愿者劳务补贴</td>
+          <td>150000</td>
+          <td>12场</td>
+          <td>12000元</td>
+        </tr>
+        <tr>
+          <td width="240">宣传物资购买</td>
+          <td>150000</td>
+          <td>12场</td>
+          <td>12000元</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="container">
+    <div class="view_item">
+      <div class="view_title">其他需要说明的事项：</div>
+      <div class="view_para">1、在实践中，家庭通过我们的服务发现孩子部分偏差行为的原因，承诺在后期教养中改正、注意教育的方式方法。</div>
+      <div class="view_para">2、参与服务的家庭在教育、教养方法上得到了提升、亲子关系更加和谐。</div>
+      <div class="view_para">3、幼儿成长环境得到了改善。</div>
+      <div class="view_para">所以我们认为这是一个非常好的项目，从源头把问题解决在萌芽状态。希望能得到指导和支持。</div>
+    </div>
+  </div>
+  <div class="foot_box">
+    <div class=foot>
+      <div>主办单位：共青团中央社会联络部、国务院扶贫办社会扶贫司、民政部社会组织管理局、中国青少年发展基金会</div>
+      <div>公益合作伙伴：中国青少年发展基金会梅赛德斯-奔驰星愿基金</div>
+      <div>技术支持：中国青年报社·中青在线 （13111111111）
+        <a href="#" target="_blank">使用说明&操作手册</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

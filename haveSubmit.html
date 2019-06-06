@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>已提交项目</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <img class="logo" src="./img/logo_text.png" />
+    <a href="register.html" class="header_btn header_register_btn">注册</a>
+    <a href="login.html" class="header_btn header_login_btn">登录</a>
+  </div>
+  <div class="title_box">
+    <div class="title_bg">
+      已提交项目
+    </div>
+  </div>
+  <div class="hs_title">我的组织状态</div>
+  <div class="sequence_info1" style="padding: 40px 100px;width: 800px;">
+    <p class="stitle1">当前组织审核状态：已通过审核</p>
+    <p class="stitle1">项目申报截止时间：2019年X月X日 24点（请于此时间截点前完成所有项目内容的整理并提交审核！）</p>
+  </div>
+  <div class="hs_title">
+    我的申报项目
+    <a href="#" class="create_btn">创建项目</a>
+  </div>
+  <div class="hs_item">
+    <span class="caogao"></span>
+    <div class="hs_pic">
+      <div class="hs_bg"></div>
+    </div>
+    <div class="hs_txt">
+      <p class="hs_desc">市级评审(<span>待评审</span> 得分:<span>80</span>分) 省级评审(<span>未晋级</span> 得分:<span>80</span>分) 全国终审(<span>已晋级</span> 得分:<span>80</span>分</p>
+      <p class="hs_head">华山论剑怎能少得了岳不群来参加华山论剑怎能少得了岳不群来参加？</p>
+      <p class="hs_do">
+        <a href="#" class="hs_view">预览</a>
+        <a href="#" class="hs_link">下载项目书</a>
+        <a href="#" class="hs_change">修改</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="foot_box">
+    <div class=foot>
+      <p>主办单位：共青团中央社会联络部、国务院扶贫办社会扶贫司、民政部社会组织管理局、中国青少年发展基金会</p>
+      <p>公益合作伙伴：中国青少年发展基金会梅赛德斯-奔驰星愿基金</p>
+      <p>技术支持：中国青年报社·中青在线 （13111111111）
+      <a href="#" target="_blank">使用说明&操作手册</a>
+      </p>
+    </div>
+  </div>
+
+</body>
+<script>
+  // 关注领域标签选中事件
+  $('.click_box input[type="button"]').click(function(e){
+    $(this).css('background','#ccc').siblings('input[type="button"]').css('background','#64b7fb');
+    $('.other_input_box').hide();
+    if($(e.target).hasClass('other_input_btn')){
+      $('.other_input_box').css('display','inline-block');
+    }
+  });
+  // 征集标签选中事件
+  $('.units_demo input[type="button"]').click(function(e){
+    $(this).css('background','#ccc');
+    $(this).parents().siblings().find('input[type="button"]').css('background','#64b7fb');
+    $('.units_title1').hide();
+    $('.units_title1').siblings('select').hide();
+    if($(e.target).hasClass('units_input_btn')){
+      $('.units_title1').show();
+      $('.units_title1').siblings('select').show();
+    }
+  });
+  // 资金标签选中事件
+  $('.fund_input_group input[type="button"]').eq(0).click(function(){
+    $(this).css('background','#ccc').siblings('input[type="button"]').css('background','#64b7fb');
+    $('.fund_add,.fund_add_cr').show();
+  });
+  $('.fund_input_group input[type="button"]').eq(1).click(function(){
+      $(this).css('background','#ccc').siblings('input[type="button"]').css('background','#64b7fb');
+    $('.fund_add,.fund_add_cr').hide();
+  });
+  $('.fund_add_cr a').click(function(){
+    $('<div class="fund_add"><span class="fund_title">获得年份：</span> <select name=""><option value="">请选择年份</option><option value="">2019</option><option value="">2018</option><option value="">2017</option></select> <span class="fund_title">项目名称： </span> <div class="fund_input_box"><input type="text"> <span class="fund_delete"></span></div></div>').insertAfter($('.fund_first'));
+    console.log(1);
+  });
+  $('body').on("click",".fund_delete",function(){
+    $(this).parent().parent().remove();
+  });
+</script>
+</html>
